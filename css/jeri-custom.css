@@ -1,0 +1,78 @@
+/* Colors
+ 
+
+*/
+
+html {font-size: 16px;}
+	body {background-color: rgba(0, 0, 0, .02); font-family: "Open Sans", sans-serif; font-size: 1em; font-weight: 400; line-height: 1.5em; color: #1f1f21;}
+	body.custom-index {}
+
+	h1, h2, h3, h4, h5, h6 {font-weight: 700; color: #05a3d0;}
+	h1 {font-size: 3.7em; font-weight: 400; color: #fefffd;}
+		.custom-watson h1 {color: rgba(151, 10, 122, 1);}
+		.custom-ecommerce h1 {color: rgba(10, 116, 151, 1);}
+		.custom-print h1 {color: rgba(40, 151, 10, 1);}
+	h2 {font-size: 1.953em;}
+	h3 {font-size: 1.563em;}
+	h4 {font-size: 1.25em; font-family: "Lora", serif; font-style: italic; font-weight: normal;}
+	h5 {font-size: 0.8em;}
+	h6 {font-size: 0.64em;}
+	em {font-family: "Lora", serif; font-style: italic;}
+
+	a {color: #ff6a53;}
+	a:hover {color: #fefffd;}
+	img {}
+
+	/* Rows */
+	.custom-index .custom-row {padding-top: 3em; padding-bottom: 4em;}
+	.custom-row {padding-bottom: 1em;}
+
+	.custom-index .custom-row:nth-child(odd) {background-color: rgba(0, 0, 0, .05);}
+
+	/* Text */
+	.custom-text-small {font-size: .8em;}
+
+	/* Tags */
+	.custom-tags {margin-bottom: 1.5em; list-style: none; padding: 0;}
+		.custom-tags li {display: inline-block; border-radius: .2em; margin-right: .3em; padding: 0 .5em; background-color: rgba(0,0,0,.1); font-size: 0.8em;}
+
+	/* Screenshots */
+	.custom-screenshots {display: block; margin-bottom: 2em;}
+		.custom-screenshots img {width: 100%;}
+	
+	.custom-screenshots-overlay {display: block; overflow: hidden;}
+		.custom-screenshots-overlay img {width: 200%;}
+		.custom-screenshots-overlay img:hover {margin-left: -100%;}
+	
+	.custom-screenshots-before {text-align: center;}
+		.custom-screenshots-before img {width: 70%;}
+
+	/* Buttons */
+	.custom-btn-next, .custom-btn-home {float: right;}
+
+	/* Circle */
+/*	.custom-row-categories {position: relative; height: 30em;}
+*/	.custom-circle {height: 8em; width: 8em; margin: 0 auto; line-height: 8em;}
+		.custom-circle-watson {position: relative; right: -40%;} 
+		.custom-circle-ecommerce {}
+		.custom-circle-print {position: relative; left: -40%;}
+			.custom-circle a {display: block; height: 100%; width: 100%; background-color: rgba(0,0,0,.2); border-radius: 50%; transition: all .3s ease; font-weight: 400; font-size: 1em; color: #fff;}
+			.custom-circle-watson a {background: rgba(151, 10, 122, .7);}
+			.custom-circle-watson a:hover {background: rgba(151, 10, 122, .9);}
+			.custom-circle-ecommerce a {background: rgba(10, 116, 151, .7);}
+			.custom-circle-ecommerce a:hover {background: rgba(10, 116, 151, .9);}
+			.custom-circle-print a {background: rgba(40, 151, 10, .7);}
+			.custom-circle-print a:hover {background: rgba(40, 151, 10, .9);}
+			.custom-circle a:hover {text-decoration: none;}
+
+	/* Media Queries */
+	@media (min-width: 900px) {
+	  .custom-container {max-width: 900px;}
+	}
+	@media (max-width: 769px) {
+		body {font-size: .9em}
+		h1 {font-size: 2.5em;}
+	  .custom-row {padding-left: 7%; padding-right: 7%;}
+	  .custom-circle-watson {position: relative; right: 0; bottom: -1.5em;} 
+		.custom-circle-print {position: relative; left: 0; top: -1.5em;}
+	}
