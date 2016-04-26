@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jeri Bowers Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700,400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--   <header class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Jeri Bowers</h1>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Work</a></li>
+        </ul>
+      </div>
+    </div>
+  </header> -->
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="eight offset-by-two columns">
+        <h2>Natural Language Classifier</h2>
+        <h3 class="subtitle">Interprets the intent behind texts and can be trained for any domain</h3>
+
+        <p>The <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/nl-classifier.html">IBM Watson Natural Language Classifier</a> (GA 2015) enables developers with no prior knowledge of machine learning to easily set-up their own cognitive application. The service interprets the intent behind what someone says. For example, if you're messaging with a customer service agent online and type, “How do I pay my bill?”,  the Natural Language Classifier service would understand the intent behind your question and provide the correct response.</p>
+        <p>My role on the project was to lead the visual design by prototyping, creating hi-fidelity visuals, and building a pattern library.</p>
+
+        <h4>Visual exploration</h4>
+        <p>I began the visual exploration phase by designing style tiles. They consisted of a single page and would include a variety of elements and patterns: color palette, headers, text styles, buttons, form fields, labels, etc. Each style tile provided a quick preview of what the overall UI could look and feel like and was helpful in determining a design direction.</p>
+      </div>
+      <figure class="twelve columns">
+        <img src="images/watson/nlc_style-tile.png" alt="">
+        <figcaption>Style tile explorations</figcaption>
+      </figure>
+      <div class="eight offset-by-two columns">
+        <p>Two things that needed to be followed during the design process:</p>
+        <ol>
+          <li>Align with the IBM Design Language</li>
+          <li>Follow the WCAG and 508 accessibility requirements</li>
+        </ol>
+        <p>The <a href="https://www.ibm.com/design/language/">IBM Design Language</a> was launched in 2014. It included best practices, resources, and inspiration to help designers achieve a consistent visual language across their products that aligned with the IBM brand. In order to achieve this, getting continuous feedback from other designers was crucial. I was fortunate enough to sit next next to my design team, so I was able to get feedback on a daily basis. We also had a weekly touchpoint with the development lead and offering manager to make sure we were aligned on requirements and priorities.</p>
+        <p>Making software accessible to all users requires special considerations. For example, content that conveys meaning needs to follow the WCAG 2.0 level AA minimum requirements of a 4.5:1 contrast ratio. This includes items such as text, buttons, graphs, and tooltips. A couple online tools that I found useful were <a href="https://accessibility.oit.ncsu.edu/tools/color-contrast/index.php?">NSCU color palette accessibility evaluator</a> and the <a href="http://webaim.org/resources/contrastchecker">WebAIM color contrast checker</a>.</p>
+      </div>
+      <figure class="twelve columns">
+        <img src="images/watson/nlc_color-variations.png" alt="">
+        <figcaption>Accessible color combinations on light and dark UI</figcaption>
+      </figure>
+      <div class="eight offset-by-two columns">
+        <p>One issue we oftentimes ran into was not being able to use light colors for important information. It either lacked the necessary contrast ratio or the color already had implied meaning (think of red denoting an error). An upside we found when exploring dark UI’s was that it allowed greater freedom to use bright, saturated colors.</p>
+
+        <h4>Hi-fidelity designs</h4>
+        <p>I worked closely with the UX designer on my team to translate the existing wireframes into hi-fidelity designs. Each user flow would address a specific use case that the user would want to perform. For example, I'd design a flow for first-time use, adding content, searching, filtering, etc.</p>
+      </div>
+      <figure class="twelve columns">
+        <img src="images/watson/nlc_onboarding.png" alt="">
+        <figcaption>First-time use modal</figcaption>
+      </figure>
+      <figure class="twelve columns">
+        <img src="images/watson/nlc_ui.png" alt="">
+        <figcaption>Training data screen that shows mapped classes and texts</figcaption>
+      </figure>      
+      <div class="eight offset-by-two columns">
+        <h4>User testing</h4>
+        <p>Working closely with the UX designer and user researcher, we ran initial tests with designers in the studio and proxy users. Sitting one-on-one with a designer, we tested interaction patterns, information architecture, microcopy, and gathered general feedback.</p>
+        <p>Testing with users and getting continuous feedback allowed us to quickly improve the designs and make refinements.</p>
+
+        <h4>Prototyping</h4>
+        <p>During this time, we continued to evolve the <a href="watson-pattern-library.html">NLC pattern library</a>. Having the elements and patterns easily accessible, enabled me to quickly <a href="http://jeribowers.github.io/nlc/">prototype the tool</a> using the pattern library as a starting point. This was a valuable asset for the development team as they began building the front-end. They were able to see the exact styles that were being applied to each element.</p>        
+      </div>      
+    </div><!-- /.row -->
+
+    <div class="row">
+      <a class="button" href="#">Previous</a>
+      <a class="button" href="#">Next</a>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Work</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

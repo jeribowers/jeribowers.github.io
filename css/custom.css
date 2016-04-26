@@ -1,0 +1,21 @@
+/* Color palette
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- gray #8D9599
+carrot #EE693F
+tangerine #F69454
+pear # 739F3D
+white #FCFDFE
+
+yellow #FEFE32
+
+*/
+em {font-family: "Droid serif", serif; font-weight: 400; font-size: .9em;}
+
+.home article a {height: 5em; margin-bottom: 2em; text-decoration: none; color: rgb(69, 70, 70);}
+	.home article h4 {margin-bottom: 0;}
+
+.subtitle {font-weight: 400;}
+
+figure {margin: 1.5em 0 2em;}
+	img {border: 1px solid rgba(69, 70, 70, .2); width: 100%;}
+	figcaption {font-family: "Droid serif", serif; font-weight: 400; font-size: .9em; text-align: center; color: rgba(69, 70, 70, .6);}
