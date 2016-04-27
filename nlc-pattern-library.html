@@ -17,7 +17,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700,400' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,17 +34,19 @@
 
   <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!--   <header class="container">
-    <div class="row">
-      <div class="twelve columns">
-        <h1>Jeri Bowers</h1>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Work</a></li>
-        </ul>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="eight offset-by-two columns">
+          <a class="name" href="index.html">Jeri Bowers</a>
+          <nav>
+            <a href="index.html">Portfolio</a>            
+            <a href="about.html">About</a>
+          </nav>
+        </div>
       </div>
     </div>
-  </header> -->
+  </header>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -52,58 +54,59 @@
     <div class="row">
       <div class="eight offset-by-two columns">
         <h2>NLC Pattern Library</h2>
-        <h3 class="subtitle">Initiative to align visual and user experience patterns to achieve cohesive user-centered experiences</h3>
-
+        <h3 class="subtitle">Aligning visual and user experience patterns to achieve cohesive user-centered experiences</h3>
+        <p class="role"><span>My role:</span> lead, visual design, HTML / CSS, Sass</p>
         <p>The pattern library was a new initiative to align visual and user experience patterns across four dispersed teams to achieve compelling and cohesive user-centered experiences. The secondary goal was to create a pattern library so that designers could rapidly prototype and share consistent modularized patterns with their development team.</p>
-        <p>My role was to facilitate and bridge the gap between design and development.</p>
+        <h4>Design audit</h4>
         <p>We started with a design audit to analyze what was currently being used in our products. By documenting each of the elements and patterns in <a href="https://mural.ly/">Mural.ly</a>, we could easily spot overlaps and inconsistencies. We used Brad Frost’s <a href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</a> methodology to organize our patterns, labeling each as an atom, molecule, or organism. We also included a Watson specific category because Watson's cognitive capabilities aren’t common vernacular.</p>
       </div>
+
       <figure class="twelve columns">
         <img src="images/watson/mural.png" />
         <figcaption>Mural.ly board of the design audit</figcaption>
-      </figure>     
-      <div class="eight offset-by-two columns">    
-        <p>Each pattern was prioritized based on importance and usage and assigned to a specific sprint. However, the schedule would adapt as we progressed through each sprint if priorities changed.</p>
-        <p>Once we had a catalog of all the common UI patterns we needing to include into the library, each item was added as a specific issue in <a href="https://github.com">GitHub</a>. There were 4 main areas we wanted to align on: guidelines for usage, variations and specific use cases, acceptance criteria, and visual styling.</p>
+      </figure>  
 
-        <p>Adding this template to the first comment of each issue, helped to establish a baseline and facilitate consistency. Each issue would then be labeled with a product label, the type of element it was (according to Brad Frost’s Atomic Design), and assigned to a milestone. Each milestone aligned to the 3-week sprint schedule our product teams used, which also included Offering Managers and Developers.</p>
+      <div class="eight offset-by-two columns">    
+        <p>Each pattern was prioritized based on importance and usage and assigned to a specific sprint. However, the schedule would adapt as we progressed through each sprint if priorities shifted.</p>
+        <h4>Using GitHub to establish a workflow</h4>
+        <p>Once we had a catalog of all the common UI patterns we needing to include into the library, each item was added as a specific issue in <a href="https://github.com">GitHub</a>. There were 4 main areas we wanted to align on: guidelines for usage, variations and specific use cases, acceptance criteria, and visual styling.</p>
+        <p>Adding this template to the first comment of each issue, helped to establish a baseline and facilitate consistency. Each issue would then be labeled with a product label, the type of element it was (according to Brad Frost’s Atomic Design), and assigned to a milestone. Each milestone aligned to the 3-week sprint schedule our product teams used, which also included offering managers and developers.</p>
       </div>
-      <figure class="twelve columns">
+
+      <figure class="ten offset-by-one columns">
         <img src="images/watson/ghe.png" />
-        <figcaption>Github comment example with placeholder template</figcaption>
-      </figure>     
+        <figcaption>Github issue example with placeholder template</figcaption>
+      </figure>  
+
       <div class="eight offset-by-two columns">          
-        <p>In the beginning of the sprint, each issue would be assigned to a visual designer. Their responsibilities included: - Verifying that screenshots had been collected for that issue.
-- Take a first pass at writing guidelines.
-- Request approval of visual styling and guidelines from team members.</p>
-				<p>The visual designer that was assigned to the issue wasn’t necessarily responsible for completing it on their own. Their main priority was to help facilitate the completion of that issue. The other team members (included UX, visual, research, and developers) were responsible for contributing relevant screenshots, questions, or comments. When adding screenshots, please include a version of the full UI so everyone understands the context. Patterns shown in isolation may not be adequately reviewed.</p>
-				<p>Since our team is dispersed across the US and the UK, we would keep the conversations contained in GitHub.  This allowed blah blah. Approve issue (by leaving a comment) when pattern and guideline are adequately defined. Sign-off requires at least one visual and UX design approval.</p>
-				<p>Once an issue is approved, a coder will be assigned to create feature branch, make code changes, and submit pull request.</p>
-				<p>Once the pattern is added to the style guide, it should be followed in future designs and prototypes. If a pattern needs to be reviewed again: open the issue, assign to yourself, and add to the current milestone.</p>
+        <p>In the beginning of the sprint, each issue would be assigned to a visual designer.</p>
+        <p>Their responsibilities included:
+        <ol>
+          <li>Verify that screenshots had been collected for that issue</li>
+          <li>Take a first pass at writing usage guidelines</li>
+          <li>Request approval of visual styling and guidelines from team members</li>
+        </ol>
+				<p>The visual designer that was assigned to the issue wasn’t necessarily responsible for completing it on their own. Their main priority was to help facilitate the completion of that issue. The other team members (included UX, visual, research, and developers) were responsible for contributing relevant screenshots, questions, or comments. We found that it was best to include full page screenshots so that everyone could understand the context. Patterns shown in isolation weren't always adequately reviewed.</p>
+				<p>Since our team was dispersed across the US and the UK, we would keep the conversations contained in GitHub.  This allowed us to have free flowing discussions even if team members were available at different times. </p>
+				<p>Once an issue was approved (which required sign-off by at least one visual and UX designer), a coder would be assigned. That coder would then create a feature branch, make code changes, and submit a pull request.</p>
+				<p>After I reviewed and pulled in the code change, the pattern was added to the <a href="http://jeribowers.github.io/nlc-pattern-library/">NLC pattern library</a> and would be followed in future designs and prototypes. If a pattern needed to be reviewed again, anyone could reopen the issue and add to the current milestone.</p>
       </div>
-      <figure class="twelve columns">
+
+      <figure class="ten offset-by-one columns">
         <img src="images/watson/alerts.png" alt="">
         <figcaption>Alert example in the pattern library</figcaption>
       </figure>   
     </div><!-- /.row -->
+
     <div class="row">
-      <a class="button" href="#">Previous</a>
-      <a class="button" href="#">Next</a>
+      <div class="eight offset-by-two columns">
+        <a class="button previous" href="nlc.html">Previous</a>
+        <a class="button next" href="design-sprint.html">Next</a>
+      </div>
     </div><!-- /.row -->
+
   </div><!-- /.container -->
 
-  <!-- Footer
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <footer class="container">
-    <div class="row">
-      <div class="twelve columns">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Work</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
