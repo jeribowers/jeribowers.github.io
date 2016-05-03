@@ -17,7 +17,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700,400' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:700,400,400italic' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -53,11 +53,15 @@
   <div class="container">
     <div class="row">
       <div class="eight offset-by-two columns">
-        <h2>NLC Pattern Library</h2>
-        <h3 class="subtitle">Aligning visual and user experience patterns to achieve cohesive user-centered experiences</h3>
+        <h2>Tooling Pattern Library</h2>
+        <h3 class="subtitle">Align visual and user experience patterns to achieve cohesive user-centered experiences</h3>
         <p class="role"><span>My role:</span> lead, visual designer, HTML / CSS, Sass</p>
-        <p>The pattern library was a new initiative to align visual and user experience patterns across four dispersed teams to achieve compelling and cohesive user-centered experiences. The secondary goal was to create a pattern library so that designers could rapidly prototype and share consistent modularized patterns with their development team.</p>
-        <h4>Design audit</h4>
+
+        <h4>The Challenge</h4>
+        <p>Natural Language Classifier, Language Translation, and Experience Manager were three separate products that belonged to the Watson Tooling portfolio. They tackled very diverse problems with different use cases but many of the patterns and interactions were the same. The lack of visual consistency across the portfolio weakened the Watson brand and created unnecessary confusion for users that used multiple Watson applications.</p>
+        <p>The Tooling Pattern Library was a new initiative to align visual and user experience patterns across three dispersed teams to achieve compelling and cohesive user-centered experiences. The secondary goal was to create a framework so that designers could rapidly prototype and share consistent modularized patterns with their development team.</p>
+
+        <h4>The Process</h4>
         <p>We started with a design audit to analyze what was currently being used in our products. By documenting each of the elements and patterns in <a href="https://mural.ly/">Mural.ly</a>, we could easily spot overlaps and inconsistencies. We used Brad Frost’s <a href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</a> methodology to organize our patterns, labeling each as an atom, molecule, or organism. We also included a Watson specific category because Watson's cognitive capabilities aren’t common vernacular.</p>
       </div>
 
@@ -67,35 +71,52 @@
       </figure>  
 
       <div class="eight offset-by-two columns">    
-        <p>Each pattern was prioritized based on importance and usage and assigned to a specific sprint. However, the schedule would adapt as we progressed through each sprint if priorities shifted.</p>
-        <h4>Using GitHub to establish a workflow</h4>
-        <p>Once we had a catalog of all the common UI patterns we needing to include into the library, each item was added as a specific issue in <a href="https://github.com">GitHub</a>. There were 4 main areas we wanted to align on: guidelines for usage, variations and specific use cases, acceptance criteria, and visual styling.</p>
-        <p>Adding this template to the first comment of each issue, helped to establish a baseline and facilitate consistency. Each issue would then be labeled with a product label, the type of element it was (according to Brad Frost’s Atomic Design), and assigned to a milestone. Each milestone aligned to the 3-week sprint schedule our product teams used, which also included offering managers and developers.</p>
+        <p>Each pattern was prioritized based on importance and usage and assigned to a specific sprint. However, the schedule was flexible and could be adjusted when priorities changed.</p>
+        <p>Once we had a catalog of all the common UI patterns we needing to include, each item was added as an individual issue in <a href="https://github.com">GitHub</a>. There were 4 main areas we gain alignment on:</p>
+        <ol>
+          <li>Definition and guidelines for usage</li>
+          <li>Variations and specific use cases</li>
+          <li>Acceptance criteria</li>
+          <li>Visual styling</li>
+        </ol> 
       </div>
 
       <figure class="ten offset-by-one columns">
         <img src="images/watson/ghe.png" />
         <figcaption>Github issue example with placeholder template</figcaption>
       </figure>  
+      
+      <div class="eight offset-by-two columns">   
+        <p>Adding this template to the first comment of each issue helped to establish a baseline and facilitate consistency. Each issue would then be labeled with a product label, the type of element it was (according to Brad Frost’s Atomic Design), and assigned to a milestone. Each milestone aligned to the 3-week sprint schedule our product teams used.</p>
+      </div>
 
       <div class="eight offset-by-two columns">          
-        <p>In the beginning of the sprint, each issue would be assigned to a visual designer.</p>
-        <p>Their responsibilities included:
+        <p>In the beginning of the sprint, each issue would be assigned to a visual designer. Their responsibilities included:</p>
         <ol>
-          <li>Verify that screenshots had been collected for that issue</li>
-          <li>Take a first pass at writing usage guidelines</li>
-          <li>Request approval of visual styling and guidelines from team members</li>
+          <li>Verifing that screenshots had been collected for that issue</li>
+          <li>Taking a first pass at writing usage guidelines</li>
+          <li>Requesting approval of visual styling and guidelines from team members</li>
         </ol>
 				<p>The visual designer that was assigned to the issue wasn’t necessarily responsible for completing it on their own. Their main priority was to help facilitate the completion of that issue. The other team members (included UX, visual, research, and developers) were responsible for contributing relevant screenshots, questions, or comments. We found that it was best to include full page screenshots so that everyone could understand the context. Patterns shown in isolation weren't always adequately reviewed.</p>
-				<p>Since our team was dispersed across the US and the UK, we would keep the conversations contained in GitHub.  This allowed us to have free flowing discussions even if team members were available at different times. </p>
-				<p>Once an issue was approved (which required sign-off by at least one visual and UX designer), a coder would be assigned. That coder would then create a feature branch, make code changes, and submit a pull request.</p>
-				<p>After I reviewed and pulled in the code change, the pattern was added to the <a href="http://jeribowers.github.io/nlc-pattern-library/">NLC pattern library</a> and would be followed in future designs and prototypes. If a pattern needed to be reviewed again, anyone could reopen the issue and add to the current milestone.</p>
+				<p>Since our team was dispersed across multiple time zones, we would keep the conversations contained in GitHub.  This allowed us to have free flowing discussions even if team members weren't available at the same time.</p>
+        <p>Once an issue was approved (which required sign-off by at least one visual and UX designer), Britany or I was assigned to code the pattern. The coder would then create a feature branch, make code changes, and submit a pull request.</p>
+        <p>After I reviewed and pulled in the code change, the pattern was added to the <a href="http://jeribowers.github.io/nlc-pattern-library/">Tooling Pattern Library</a> and would be followed in future designs and prototypes. If a pattern needed to be reviewed again, anyone could reopen the issue and assign to the current milestone.</p>
       </div>
 
       <figure class="ten offset-by-one columns">
         <img src="images/watson/alerts.png" alt="">
-        <figcaption>Alert example in the pattern library</figcaption>
-      </figure>   
+        <figcaption>Alert pattern in the Tooling Pattern Library</figcaption>
+      </figure>  
+
+      <div class="eight offset-by-two columns"> 
+        <p>Working with the developers on my team, especially David and John, was crucial to the success of the library. David provisioned the repository with <a href="https://github.ibm.com/WatsonTooling/ibmwatson-common-ui-style#step-1---install-all-the-things">ALL THE THINGS</a> like Sass, Bower, Grunt and other dependencies. During development, John played a pivotal role by reviewing my code and making sure all the pull requests to the development repository were submitted correctly.</p>  
+      </div>
+
+      <div class="eight offset-by-two columns"> 
+        <h4>The Outcome</h4>
+        <p>By the end of 2015, Natural Language Classifier, Language Translation, and Experience Manager successfully released using the Tooling Pattern Library as a framework. This improved alignment between designers and developers. It reduced the need for "waterfall" and moved the team towards a continuous delivery and agile methodology. It also provided a starter template for designers to quickly prototype designs and test with users.</p>  
+      </div>
+
     </div><!-- /.row -->
 
     <div class="row">
